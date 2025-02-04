@@ -52,7 +52,7 @@ A fun and interactive color guessing game where players must correctly identify 
 
 ## 🌍 Live Demo
 
-[Play the Game Here](https://color-guessing-game-color-game.netlify.app)
+[Play the Game Here](https://color-guessing-game-eosin.vercel.app/)
 
 ## 📜 License
 
