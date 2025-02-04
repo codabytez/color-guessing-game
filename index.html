@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Color Guessing Game" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Color Guessing Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="title">Color Guessing Game</h1>
+        <p>Match the mysterious color below!</p>
+      </div>
+
+      <div class="stats">
+        <div class="stat-box">
+          <p>Score</p>
+          <h3 data-testid="score">0</h3>
+        </div>
+        <div class="stat-box">
+          <p>High Score</p>
+          <h3 id="highScore">0</h3>
+        </div>
+        <div class="stat-box">
+          <p>Time</p>
+          <h3 id="timer">15s</h3>
+        </div>
+      </div>
+
+      <div id="streakDisplay" class="streak" style="display: none">
+        🔥 Streak: <span id="streakCount">0</span> 🔥
+      </div>
+
+      <div class="color-box" data-testid="colorBox"></div>
+
+      <div class="status" data-testid="gameStatus"></div>
+
+      <div class="options-grid" data-testid="colorOptions"></div>
+
+      <div class="controls">
+        <button class="button button-primary" data-testid="newGameButton">
+          New Game
+        </button>
+        <select class="button button-secondary" id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="game-over" id="gameOverScreen">
+      <div class="game-over-content">
+        <h2 class="title">Game Over!</h2>
+        <div class="stats-grid">
+          <div class="stat-box">
+            <p>Final Score</p>
+            <h3 id="finalScore">0</h3>
+          </div>
+          <div class="stat-box">
+            <p>High Score</p>
+            <h3 id="finalHighScore">0</h3>
+          </div>
+          <div class="stat-box">
+            <p>Accuracy</p>
+            <h3 id="accuracy">0%</h3>
+          </div>
+          <div class="stat-box">
+            <p>Best Streak</p>
+            <h3 id="bestStreak">0</h3>
+          </div>
+        </div>
+        <button class="button button-primary" id="playAgain">Play Again</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <a
+        href="https://twitter.com/yourusername"
+        class="twitter-link"
+        target="_blank"
+      >
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+          ></path>
+        </svg>
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
